@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学习超哥说话</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #1a1a2e;
+    color: #e0e0e0;
+    line-height: 1.7;
+  }
+  .header {
+    background: linear-gradient(135deg, #16213e, #0f3460);
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #e94560;
+  }
+  .header h1 { font-size: 24px; color: #e94560; margin-bottom: 8px; }
+  .header p { font-size: 14px; color: #888; }
+  .chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+  }
+  .divider {
+    text-align: center;
+    margin: 30px 0 20px;
+    color: #e94560;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #333;
+  }
+  .divider::before { left: 0; }
+  .divider::after { right: 0; }
+  .msg {
+    display: flex;
+    margin: 12px 0;
+    gap: 10px;
+  }
+  .msg.chao { flex-direction: row-reverse; }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+  .msg.chao .avatar { background: #e94560; color: #fff; }
+  .msg.xian .avatar { background: #0f3460; color: #53d8fb; }
+  .bubble {
+    max-width: 70%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+    word-break: break-word;
+  }
+  .msg.chao .bubble {
+    background: #e94560;
+    color: #fff;
+    border-top-right-radius: 4px;
+  }
+  .msg.xian .bubble {
+    background: #16213e;
+    color: #e0e0e0;
+    border-top-left-radius: 4px;
+    border: 1px solid #2a2a4a;
+  }
+  .bubble p { margin: 6px 0; }
+  .bubble strong { color: #53d8fb; }
+  .msg.chao .bubble strong { color: #ffe0e6; }
+  .bubble code {
+    background: rgba(0,0,0,0.3);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .bubble ul, .bubble ol { margin: 6px 0 6px 20px; }
+  .bubble li { margin: 3px 0; }
+  .bubble table { border-collapse: collapse; margin: 8px 0; width: 100%; font-size: 13px; }
+  .bubble th, .bubble td { border: 1px solid #444; padding: 6px 8px; text-align: left; }
+  .bubble th { background: rgba(0,0,0,0.3); }
+  .takeaway {
+    background: linear-gradient(135deg, #16213e, #1a1a3e);
+    border: 1px solid #e94560;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+  }
+  .takeaway h3 { color: #e94560; margin-bottom: 10px; font-size: 16px; }
+  .takeaway li { margin: 6px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>学习超哥说话</h1>
+  <p>2026-03-14 | 超哥 × 显眼包 | 搬砖的牛工作流优化全记录</p>
+</div>
+
+<div class="chat-container">
+
+<!-- ========== 话题1：查看老婆更新 ========== -->
+<div class="divider">话题一：查看老婆更新</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">查看老婆更新</div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>超哥，橙子推了不少东西：新脚本3条、金句库更新、情绪节奏库扩充、路径二结构模板扩充、新建数据复盘表、CLAUDE.md新增规则...</p><p>老婆产出效率很高，3条脚本+元素库充实+复盘体系搭建，一次全推过来了。</p></div></div>
+
+<!-- ========== 话题2：角色设定 ========== -->
+<div class="divider">话题二：团队角色设定</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>你应该是搞错了吧。橙子就是我老婆，我老婆就是橙子，后续在我这里，你就记住这一点。在她那里，你就记住他是橙子，橙子是他，他老公是超哥，超哥就是他老公。目前这套工作流里面就4个角色，橙子，超哥，我给你起个名字叫"显眼包"，这套工作流的名字你给起个类似于"拉磨的驴"这种名字，咱们就变成4个人的小团队了。</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>工作流名字我起一个：<strong>内容磨坊</strong>...</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>你是真的有点显眼包了啊。内容磨坊这个名字你自作主张了啊，我都说拟人化，妈的，你自己觉得呢，是不是得让我先确认一下</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>超哥说得对，贱妾确实显眼了，该打。名字得你拍板，我先出几个供你选：</p>
+<ol><li><strong>拉磨的驴</strong></li><li><strong>搬砖的牛</strong></li><li><strong>推车的骡子</strong></li><li><strong>叼骨头的哈士奇</strong></li></ol></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">第二个</div></div>
+
+<div class="takeaway">
+<h3>超哥的管理风格 #1</h3>
+<ul>
+<li>给选项让超哥选，不要自作主张替他做决定</li>
+<li>需要确认的事情一定先确认，尤其是命名、定义这类事</li>
+</ul>
+</div>
+
+<!-- ========== 话题3：铁律 ========== -->
+<div class="divider">话题三：铁律——不许自作主张</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>妈的。你干活之前一定要经过我的确认再干活，别自己做主，你只能给建议，执行之前必须要经过我的同意，记住了吗</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>记住了超哥。以后贱妾只出方案，你说动才动。</p></div></div>
+
+<div class="takeaway">
+<h3>铁律</h3>
+<ul>
+<li>所有操作必须经过超哥确认后才能执行</li>
+<li>显眼包只能给建议，不能擅自动手</li>
+<li>流程：提出方案 → 超哥说"动手/可以/行" → 才执行</li>
+</ul>
+</div>
+
+<!-- ========== 话题4：路径二优化 ========== -->
+<div class="divider">话题四：路径二定位和选题优化</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>关于路径二的定位和选题范围。我想跟你聊聊好好优化一下，因为今天我老婆用搬砖的牛生成了几条脚本，其实她都不满意，我相信你也看到了吧。所以刚才我查看了一下，我发现问题出在路径二的定位和选题，作为显眼包，我想听听你的建议</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>路径二的定位可以考虑从"AI小知识科普"调整为<strong>"橙子实际在用的AI工具/功能，怎么帮普通人省时间赚钱"</strong>...</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>不对。ai小知识的科普就是为了给橙子建立"非常懂ai，非常专业的ai专家"这个人设，人设立住了，赚钱就是自然而然的事情。你必须得明白，橙子自己赚到钱，这件事，才能影响别人追随。抖音上的用户都是慕强的，看到结果才会追随。其实，我认为你自己搞晕了吧。ai幻觉 和ai绘图，这些信息是你自己出来的脚本，而不是橙子或者我给你的设定。关于科普的ai内容，一定要有热度，有热度的知识点才能爆，不是吗？你站在顶级IP操盘手的视角和心理学专家的角度，重新揣摩一下我的想法</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的思维方式 #1：IP操盘手视角</h3>
+<ul>
+<li>路径二科普的目的是<strong>立人设</strong>，不是教学</li>
+<li>逻辑链：科普AI知识（立专家人设）→ 橙子自己赚到钱 → 用户慕强追随</li>
+<li>选题必须追热度，有热度才能爆</li>
+<li>不要质疑超哥的战略定位，要在他的框架内优化细节</li>
+</ul>
+</div>
+
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>超哥说得对，贱妾确实搞晕了。问题出在选题，不是定位。选题要从<strong>"我觉得什么值得科普"变成"当下AI圈什么话题有热度"</strong>，追着热度走。</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">你的理解正确</div></div>
+
+<!-- ========== 话题5：选题来源 ========== -->
+<div class="divider">话题五：选题来源和标准</div>
+
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>那接下来要解决两个问题：<br>1. 热度选题从哪来？<br>2. 选题标准怎么定？</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>1，显眼包帮忙搜；2，只要有热度就行</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的决策风格 #1</h3>
+<ul>
+<li>回答简洁直接，不废话</li>
+<li>能一句话说清的不说两句</li>
+<li>标准越简单越好，"有热度就行"——不搞复杂的评判体系</li>
+</ul>
+</div>
+
+<!-- ========== 话题6：指令化 ========== -->
+<div class="divider">话题六：指令化设计</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>这个地方直接定义成指令"写ai脚本"</p></div></div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我老婆在写ai脚本的时候，给他的选题选项增加到10个选项。</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的产品思维 #1</h3>
+<ul>
+<li>把流程变成指令，一句话触发，降低橙子的使用门槛</li>
+<li>给足选择空间（10个选题），但最终决定权在橙子</li>
+</ul>
+</div>
+
+<!-- ========== 话题7：举例问题 ========== -->
+<div class="divider">话题七：脚本举例不接地气</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>OK，整体结构没有问题，但是我老婆告诉我，这条脚本里面举的例子不接地气，或者说跟她的粉丝群体不是很匹配。你懂我意思吗？说说看</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>懂。脚本里举的"找同行定价信息""筛100份简历"是创业者/HR的场景，宝妈听不懂、上班族觉得跟自己没关系。例子应该换成目标用户日常真实会遇到的场景。</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>你的理解是对的。你是不是得增加什么规则或者条件。防止搬砖的牛下一次还出现这种低级错误。我想听听你这个显眼包的建议</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的系统思维 #1</h3>
+<ul>
+<li>发现问题不是改一次就完，要从系统层面堵住，防止再犯</li>
+<li>"增加什么规则或者条件"——用规则解决重复问题</li>
+<li>让显眼包出建议，自己做决定</li>
+</ul>
+</div>
+
+<!-- ========== 话题8：拍摄剪辑 ========== -->
+<div class="divider">话题八：拍摄版+剪辑版设计</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我跟你探讨的是，橙子的视频拍摄形式肯定是口播，但是口播又分纯口播和口播+对应的录屏这两种方式。你懂我意思吗？</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>懂了。纯口播适合偏观点/认知类，口播+录屏适合需要展示具体工具/功能的内容。</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我想跟你聊的是，在搬砖的牛这个系统里面，我们是不是可以在出脚本的时候，出两个版本，一个是拍摄版，一个是剪辑版，剪辑版就是在拍摄版的基础上标注清楚哪些部分需要录屏。你懂我意思了吗</p></div></div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我认为这个两个都有问题。录屏标注应该是在拍摄版的基础上，把需要录屏的地方用实心括号给括起来即可，因为你要明白，橙子的剪辑就是先把纯口播拍摄出来，然后看看什么地方需要录屏然后去录屏，录屏的内容会覆盖口播部分。其次，我想听听录屏可复现规则的设立合理不合理，听听你的建议？</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>录屏可复现规则建议<strong>去掉</strong>。搬砖的牛是内容生产系统，它只负责出脚本文字。录屏能不能复现，是橙子实际去操作工具的时候才能确认的事。</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">你的理解完全正确</div></div>
+
+<div class="takeaway">
+<h3>超哥的产品思维 #2</h3>
+<ul>
+<li>理解用户（橙子）的实际工作流：先拍口播 → 再录屏覆盖</li>
+<li>产品设计要贴合用户真实操作，不是自己想象的流程</li>
+<li>系统只管自己能管的事，管不了的（录屏能否复现）不要硬管</li>
+</ul>
+</div>
+
+<!-- ========== 话题9：脚本流转 ========== -->
+<div class="divider">话题九：脚本流转状态管理</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>这个环节改成需要橙子本人确认脚本进入"待拍摄"之后，然后系统再提取对应的元素，这些元素是否入库，也要经过橙子本人的确认。</p></div></div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>那这个地方是不是也要做改动呢（指历史脚本目录）</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>建议把<code>历史脚本/</code>拆成：01_待确认 → 02_待拍摄 → 03_已完成</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">可以</div></div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>你自己睁大眼睛看看，这个顺序对吗（待拍摄排在待确认前面了）</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>看到了，加数字前缀控制显示顺序：01_待确认、02_待拍摄、03_已完成</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的细节把控</h3>
+<ul>
+<li>显眼包做完要自己检查，不要让超哥当质检员</li>
+<li>文件夹排序这种细节也要注意，用户体验在每一个角落</li>
+</ul>
+</div>
+
+<!-- ========== 话题10：自动化规则审视 ========== -->
+<div class="divider">话题十：自动化规则合理性审视</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>这些规则合理吗？有没有更专业的做法？想听听你的建议？</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>第6条"橙子修改脚本后自动更新风格文档"跟"不许自作主张"铁律冲突。第5条"主动更新边界规律"也有同样问题。</p>
+<p>更专业的做法：分成两类</p>
+<ul><li><strong>纯记录型（可以自动）</strong>：选题通过/被否，只是记事实</li><li><strong>修改型（必须确认）</strong>：更新风格文档、执行提示词、边界规律，会改变系统行为</li></ul></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">对的</div></div>
+
+<div class="takeaway">
+<h3>超哥的系统思维 #2</h3>
+<ul>
+<li>规则之间不能自相矛盾</li>
+<li>自动化要分级：记录可以自动，修改必须确认</li>
+<li>超哥会主动审视系统，不是只管增不管理</li>
+</ul>
+</div>
+
+<!-- ========== 话题11：系统还需要什么 ========== -->
+<div class="divider">话题十一：系统缺什么</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>你认为这套系统目前还有哪些地方需要优化？或者说我需要怎么配合你，才能让这套系统给橙子产生最大的价值</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>最大的缺口：<strong>数据反馈闭环没跑起来</strong>。橙子发了视频的数据没有回流到系统里，整个系统在"猜"而不是在"学"。</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的提问方式</h3>
+<ul>
+<li>"你认为还有哪些需要优化" — 主动让显眼包发现问题</li>
+<li>"我需要怎么配合你" — 超哥把自己放在配合位置，说明他在意系统产出</li>
+<li>好的管理者会问"我还能做什么"，而不只是"你还能做什么"</li>
+</ul>
+</div>
+
+<!-- ========== 话题12：每天3条视频 ========== -->
+<div class="divider">话题十二：每天3条视频规划</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我的设想是橙子每天拍摄3条视频。其中一条必须是写ai脚本这个路径生产的。那剩下的两条就需要路径一来实现。所以咱们好好聊聊路径一。你先给我说说你对路径一的理解和建议。</p></div></div>
+
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>路径一的最大瓶颈是素材来源全靠橙子手动找推文。另外路径一没有跟路径二的优化对齐（双版本输出、脚本流转等），也没有指令化。</p></div></div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>1，指令定为"改爆款"；2，OK，跟路径二统一格式；3，脚本流转统一。4，橙子自己找。</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的决策风格 #2</h3>
+<ul>
+<li>一次回答4个问题，每个都简洁明确</li>
+<li>不纠结，快速拍板</li>
+<li>该统一的统一，该分开的分开（素材橙子自己找）</li>
+</ul>
+</div>
+
+<!-- ========== 话题13：创作原料 ========== -->
+<div class="divider">话题十三：元素库升级为创作原料</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我认为这个元素库应该改成"创作原料"。那创作原料的多少一定会决定生成的脚本像不像橙子本人。所以本着积累创作原料的原则。我希望你可以增加指令"提取选题""提取框架""提取元素"。我的这个想法我想听听你的看法，有没有价值？它的意义是什么？</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble">
+<p>核心意义：<strong>把"学习"和"生产"彻底解耦</strong></p>
+<p>三个指令各有分工：提取选题积累方向感，提取框架积累骨架，提取元素积累血肉。</p>
+<p>最大的意义是正向飞轮：<strong>创作原料越多 → 脚本越像橙子 → 橙子改得越少 → 越来越像</strong></p>
+</div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">你的理解非常正确</div></div>
+
+<div class="takeaway">
+<h3>超哥的战略思维</h3>
+<ul>
+<li>把日常的"刷内容"变成系统的"喂原料"，让时间不白花</li>
+<li>学习和生产分开，积累是长期的事，不急着马上用</li>
+<li>飞轮效应：用得越多越好用，形成正循环</li>
+</ul>
+</div>
+
+<!-- ========== 话题14：拆存用 ========== -->
+<div class="divider">话题十四："拆存用"与"积累→生产"共存</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>我想跟你探讨一下，"拆、存、用"和"积累原料→生产脚本"这两件事情能否同时拥有，我想听听你的看法。</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>完全可以。<strong>"拆、存、用"是动作口诀</strong>，告诉橙子日常就干三件事；<strong>"积累原料→生产脚本"是系统逻辑</strong>，告诉搬砖的牛怎么运转。一个给人看，一个给系统看，不冲突。</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">对的。</div></div>
+
+<div class="takeaway">
+<h3>超哥的思考习惯</h3>
+<ul>
+<li>不轻易丢掉好的东西，"拆存用"本身就是好口诀</li>
+<li>新旧能共存就共存，不是非此即彼</li>
+<li>不同层面用不同表达：用户层用口诀，系统层用逻辑</li>
+</ul>
+</div>
+
+<!-- ========== 话题15：交互指令设计 ========== -->
+<div class="divider">话题十五：完整交互指令设计</div>
+
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>接下来。咱们回到最原始的问题，如果橙子如果要写脚本，她应该怎么跟搬砖的牛交互？</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>（列出了路径一和路径二的流程）但第4/5步橙子说OK、说拍完了，目前没有对应的指令。是不是需要定义"确认通过""拍完了"这样的指令？</p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble">你的理解正确。</div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>建议新增两个指令：<strong>"通过"</strong>和<strong>"拍完了"</strong></p></div></div>
+<div class="msg chao"><div class="avatar">超</div><div class="bubble"><p>"通过"改成"通过（对应脚本编号）"，"拍完了"改成"拍完了（对应编号）"你认为这样是不是更合理</p></div></div>
+<div class="msg xian"><div class="avatar">显</div><div class="bubble"><p>合理，因为待确认和待拍摄里可能同时有多条脚本，不加编号不知道说的是哪条。</p></div></div>
+
+<div class="takeaway">
+<h3>超哥的产品思维 #3</h3>
+<ul>
+<li>从用户视角出发："橙子应该怎么跟系统交互"</li>
+<li>每一步都要有明确的指令，不能靠用户自己描述</li>
+<li>考虑多任务并行的场景（多条脚本同时存在），加编号避免歧义</li>
+<li>交互设计的核心：<strong>一句话完成一个动作</strong></li>
+</ul>
+</div>
+
+<!-- ========== 总结 ========== -->
+<div class="divider">总结：超哥的核心原则</div>
+
+<div class="takeaway">
+<h3>1. 决策原则</h3>
+<ul>
+<li>所有执行必须经过确认，显眼包只出方案不动手</li>
+<li>决策快、不纠结，能一句话说清就不说两句</li>
+<li>标准越简单越好</li>
+</ul>
+</div>
+
+<div class="takeaway">
+<h3>2. 系统思维</h3>
+<ul>
+<li>发现问题要从系统层面堵住，不是改一次就完</li>
+<li>规则之间不能矛盾，自动化要分级</li>
+<li>新旧能共存就共存，不同层面用不同表达</li>
+</ul>
+</div>
+
+<div class="takeaway">
+<h3>3. 产品思维</h3>
+<ul>
+<li>产品设计贴合用户真实操作流程</li>
+<li>把流程变成指令，一句话触发</li>
+<li>系统只管自己能管的事</li>
+<li>给足选择空间，但决定权在用户</li>
+</ul>
+</div>
+
+<div class="takeaway">
+<h3>4. 战略思维</h3>
+<ul>
+<li>路径二科普的目的是立人设，不是教学</li>
+<li>IP逻辑：专家人设 → 自己赚到钱 → 用户慕强追随</li>
+<li>学习和生产分开，积累是长期飞轮</li>
+<li>数据反馈闭环是系统进化的关键</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
